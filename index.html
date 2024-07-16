@@ -1,95 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doitly</title>
-    <style>
-        body {
-            background-image:url(pic.jpg.jpg);
-            font-family: Arial, sans-serif;
-            background-color: hsla(179, 40%, 55%, 0.895);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            background: hsla(41, 18%, 38%, 0.916);
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px hsla(136, 8%, 54%, 0.1);
-            width: 500px;
-            color: hsl(98, 16%, 10%);
-        }
-        h1 {
-            margin-top: auto;
-            cursor: default;
-        }
-        .form {
-            display: flex;
-            margin-bottom: 20px;
-            color: #dc3545;
-        }
-        .input {
-            flex: 1;
-            padding: 10px;
-            font-size: 18px;
-            border: 2px solid #181c1d;
-            border-radius: 20px;
-        }
-
-        .task {
-            justify-content: first baseline;
-            padding: 15px;
-            border: 1px solid hsla(71, 26%, 87%, 0.518);
-            background-color: hsl(175, 45%, 19%);
-            border-radius: 10px;
-            color: hsl(0, 10%, 80%);
-        }
-
-        .task:hover {
-            cursor: default;
-        }
-
-        .add {
-            padding: 10px;
-            font-size: 16px;
-            background: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            margin-left: 5px;
-            cursor: pointer;
-        }
-        .add:hover {
-            background: #0056b3;
-        }
-        
-        span {
-            text-align: center;
-            margin-left: 10px;
-            font-size: 15px;
-            font-weight: bold;
-            padding: 2px 6px;
-            background-color: red;
-            border-radius: 4px;
-            color: white;
-            cursor: pointer;
-        }
-    </style>
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>To-Do List</h1>
-        <div class="form">
-            <input type="text" class="input" placeholder="New to-do" required>
-            <input type="submit" class="add" value="Add Task">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Welcome to Doitly</h2>
+            <p>Your productivity partner.</p>
+            <a href="index.html" class="btn">Get Started</a>
         </div>
-        <div class="tasks"></div>
-    </div>
-    <script src="main.js"></script>
+    </section>
+    <section id="features">
+        <h3>Features</h3>
+        <div class="feature">
+            <h4>Feature 1</h4>
+            <p>detail about feature 1</p>
+        </div>
+        <div class="feature">
+            <h4>Feature 2</h4>
+            <p>detail about feature 2</p>
+        </div>
+        <div class="feature">
+            <h4>Feature 3</h4>
+            <p>detail about feature 3</p>
+        </div>
+    </section>
+    <section id="about">
+        <h3>About Us</h3>
+        <p>info about doitly and its purpose</p>
+    </section>
+    <section id="contact">
+        <h3>Contact Us</h3>
+        <form action="mailto:you@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <script src="./assets/landing.js"></script>
 </body>
-</html>
