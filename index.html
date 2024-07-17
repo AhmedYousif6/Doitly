@@ -3,55 +3,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
-    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/styles/landing.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <div class="logo">
+            <h1>Doitly</h1>
+        </div>
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
     </header>
     <section id="hero">
         <div class="hero-content">
-            <h2>Welcome to Doitly</h2>
-            <p>Your productivity partner.</p>
-            <a href="./app.html" class="btn">Get Started</a>
+            <h2>Doitly</h2>
+            <p>Welcome to Doitly, Your productivity partner.</p>
+            <a href="./main.html" class="btn">Get Started</a>
         </div>
     </section>
     <section id="features">
         <h3>Features</h3>
         <div class="feature">
-            <h4>Feature 1</h4>
-            <p>detail about feature 1</p>
+            <img id="img-1" src="./assets/pics/tasks management.jpg.jpg" alt="Task Management">
+            <div class="feature-text">
+                <h4>Task Management</h4>
+                <p>Easily manage all your tasks in one place. Create, delete, and organize tasks with ease.</p>
+            </div>
         </div>
         <div class="feature">
-            <h4>Feature 2</h4>
-            <p>detail about feature 2</p>
+            <img id="img-2" src="./assets/pics/simple interface.jpg.jpg" alt="Simple Interface">
+            <div class="feature-text">
+                <h4>Simple Interface</h4>
+                <p>Our user-friendly interface makes it simple to navigate and use all the features of Doitly.</p>
+            </div>
         </div>
         <div class="feature">
-            <h4>Feature 3</h4>
-            <p>detail about feature 3</p>
-        </div>
+            <img id="img-3" src="./assets/pics/delete tasks.jpg.jpg" alt="Delete Tasks">
+            <div class="feature-text">
+                <h4>Delete Tasks</h4>
+                <p>Quickly delete tasks that are no longer needed, keeping your task list clean and up-to-date.</p>
+            </div>
+            </div>
     </section>
     <section id="about">
         <h3>About Us</h3>
-        <p>info about doitly and its purpose</p>
+        <div class="about-content">
+            <p>Doitly was inspired by the need to organize daily tasks efficiently and effectively. As someone who juggles multiple projects, I found it challenging to keep track of my to-dos. This project started as a simple list-making app and has grown into a comprehensive task management tool. It is now a key part of my productivity toolkit.</p>
+            <div class="team">
+                <h4>Meet the Team</h4>
+                <div class="team-member">
+                    <h5>Ahmed Yousif</h5>
+                    <ul>
+                        <li><a href="www.linkedin.com/in/ahmed-yousif-808001265" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://github.com/AhmedYousif6" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>Check out the <a href="https://github.com/AhmedYousif6/Doitly" target="_blank">GitHub repository</a> for this project.</p>
+        </div>
     </section>
-    <section id="contact">
-        <h3>Contact Us</h3>
-        <form action="mailto:you@example.com" method="post" enctype="text/plain">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-    <script src="./assets/landing.js"></script>
+    <script src="./assets/scripts/landing.js"></script>
 </body>

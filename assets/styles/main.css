@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to right, #ff7e5f, #feb47b);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: #333;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: #a34922d0;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    font-size: 32px;
+    cursor: default;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    color: #333;
+    margin-top: 40px;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #444;
+    cursor: default;
+}
+
+.form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input {
+    flex: 1;
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.input:focus {
+    border-color: #ff7e5f;
+}
+
+.add {
+    padding: 10px;
+    font-size: 16px;
+    background: #ff7e5f;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.add:hover {
+    background: #e7673c;
+}
+
+.tasks {
+    text-align: left;
+    cursor: default;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    color: #333;
+    margin: 8px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+}
+
+.task:hover {
+    background-color: #f1f1f1;
+}
+
+span {
+    text-align: center;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 2px 6px;
+    background-color: #ff6b6b;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+span:hover {
+    background-color: #e64b4b;
+}
