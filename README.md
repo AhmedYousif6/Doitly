@@ -12,7 +12,7 @@ Doitly is a simple, intuitive to-do list web application that helps you manage y
 ## Screenshots
 
 ![Landing Page](https://github.com/AhmedYousif6/Doitly/blob/main/screenshots/Capture.PNG)
-![Task List](screenshots/Capture3.png)
+![Task List](https://github.com/AhmedYousif6/Doitly/blob/main/screenshots/Capture3.PNG)
 
 ## Installation
 
