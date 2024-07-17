@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    width: 100%;
+    width: auto;
     padding: 20px;
     background-color: #a34922d0;
     color: #ffffff;
